@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="favicon.ico" type="image" sizes="16x16">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>http//:www.blogger.com/login </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        
+        .main_body {
+            display: flex;
+            background-image: linear-gradient(rgb(101, 68, 231), rgb(116, 205, 243));
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+            justify-content: center;
+        }
+        
+        .box {
+            width: 400px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 65px;
+            background: -webkit-linear-gradient(top, #7579ff, #b224ef);
+        }
+        
+        .box h1 {
+            margin-bottom: 50px;
+            color: white;
+            text-align: center;
+            font-size: 40px;
+            padding: 12px;
+        }
+        
+        .input {
+            position: relative;
+        }
+        
+        .input input {
+            width: 100%;
+            padding: 10px;
+            color: white;
+            font-size: 16px;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+            border: none;
+            border-bottom: 2px solid #fff;
+            background-color: transparent;
+            outline: none;
+        }
+        
+        .input label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            letter-spacing: 1px;
+            padding: 10px 0;
+            color: #fff;
+            transition: 0.5s;
+            pointer-events: none;
+        }
+        
+        .box input[type="submit"] {
+            background: transparent;
+            border: none;
+            outline: none;
+            color: white;
+            background: rgb(29, 29, 231);
+            padding: 8px 16px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        
+        .box input[type="submit"]:hover {
+            background-color: rgb(0, 0, 255);
+            cursor: pointer;
+        }
+        
+        .input input:focus~label,
+        .input input:valid~label {
+            top: -20px;
+            left: 0;
+            color: blue;
+            font-size: 12px;
+        }
+        
+        .input span::before {
+            content: '';
+            position: absolute;
+            top: 39px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: blue;
+            transition: 0.5s;
+        }
+        
+        .input input:focus~span::before,
+        .input input:valid~span::before {
+            width: 100%;
+        }
+        
+        .box h4 {
+            padding: 10px 0;
+        }
+        
+        .box h4 a {
+            text-decoration: none;
+            color: blue;
+            font-size: 12px;
+        }
+        
+        .box h3 a {
+            text-decoration: none;
+            color: blue;
+            font-size: 17px;
+        }
+        
+        .box h4 a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        
+        .box h3 a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        
+        .box h3 {
+            padding: 10px 0;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_body">
+        <div class="box">
+            <h1>SingUp</h1>
+            <form action="" method="get">
+
+                <div class="input">
+
+                    <input type="text " required>
+                    <label for="">Name</label>
+                    <span></span>
+                </div>
+                <div class="input">
+
+                    <input type="Email " required>
+                    <label for="">Email</label>
+                    <span></span>
+                </div>
+                <div class="input">
+
+                    <input type="password " required>
+                    <label for="">password</label>
+                    <span></span>
+                </div>
+                <div class="input">
+
+                    <input type="password " required>
+                    <label for="">password</label>
+                    <span></span>
+                </div>
+                <div class="input">
+
+                    <input type="password " required>
+                    <label for="">password</label>
+                    <span></span>
+                </div>
+                <input type="submit" value="Login">
+
+                <h4>
+                    <a href="">Forget Password?</a>
+                </h4>
+                <h3>
+                    Not Have a Account?<a href="">SingUp.</a>
+                </h3>
+        </div>
+        </form>
+
+
+    </div>
+
+
+</body>
+
+</html>
